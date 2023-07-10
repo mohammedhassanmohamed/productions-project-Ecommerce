@@ -1,0 +1,33 @@
+/* .bignav {
+    box-shadow: 20px 20px 50px rgb(77, 76, 76);
+    z-index: 100000;
+    background-color: rgb(86, 89, 109);
+    color: white;
+} */
+
+/* Nav a.active {
+    text-decoration: underline;
+
+    color: greenyellow;
+
+} */
+
+Nav a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+   
+}
+
+#number0-nav h1{
+text-align: center;
+margin: auto auto;
+
+}
+#number0-nav  {
+    height: 50px;
+width: 50px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50% 50% ;
+}

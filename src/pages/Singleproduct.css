@@ -1,0 +1,254 @@
+div .all-single-page{
+height: 60vh;
+position: relative;
+margin-left: 50px;
+
+}
+/* div .rating{
+  
+position: absolute;
+top: 10px;
+color: antiquewhite;
+} */
+.shopping-cart{
+width: 70%;
+height: 50vh;
+/* border: 2px solid rgba(0, 0, 0, 0.247); */
+border-radius: 10px;
+margin-left: 150px;
+overflow: hidden;
+margin-top: 70px;
+position: relative;
+/* border: 3px solid white; */
+}
+
+.my-single-image{
+width: 250px;
+height:50vh;
+margin-left: 0;
+margin-top: -28px;
+
+
+}
+.div-of-single-image{
+width:40%;
+margin-top: 30px;
+height: 180px;
+}
+div .rating{
+width: fit-content;
+margin-top: 20px;
+ 
+}
+.all-items{
+
+width: 60%;
+/* padding: 10px; */
+margin-left: 350px;
+margin-top: 30px;
+
+position: absolute;
+}
+.product-description{
+color: rgba(255, 255, 255, 0.589);
+width: 100%;
+height: 10vh;
+}
+
+.price {
+  margin: 0 0 10px 0;
+  line-height: 24px;
+  color: #3273e4;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product_page_price .price-new {
+  font-size: 28px;
+}
+.price .price-new, .price span.price {
+  color: #3273e4;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+
+
+/* input */
+
+.form-crease{
+width: 50px;
+ margin-top: 70px; 
+}
+
+.all-single-page{
+width: 100%;
+height: 130vh;
+
+}
+
+#btn-add-card{
+width:150px;
+position: absolute;
+height: 40px;
+bottom: 50px;
+left: 355px;
+}
+#btn-HOME{
+  width:150px;
+  position:absolute;
+  height: 40px;
+  
+  bottom: 50px;  right: 350px;
+
+}
+#btn-add-card button:hover{
+
+  color:gold;
+  background-color: white;
+  
+  }
+
+ #btn-HOME button:hover{
+
+color:gold;
+background-color: white;
+
+}
+
+/* about modal pop up */
+
+
+.modal {
+  overflow: hidden;
+  margin-top: 120px;
+
+}
+
+.modal .modalbody {
+
+height: 60vh;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 50px;
+  overflow: hidden;
+
+}
+
+
+/* media querry */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  div .all-single-page{
+    height: 60vh;
+    position: relative;
+    margin-left: -130px;
+    
+    }
+    .shopping-cart{
+      width: 90%;
+      height: 50vh;
+      /* border: 2px solid rgba(0, 0, 0, 0.247); */
+      border-radius: 10px;
+      /* margin-left: 150px; */
+      overflow: hidden;
+      /* margin-top: 70px; */
+      position: relative;
+      border: 3px solid white;
+  
+    }
+.all-items{
+margin-left: 260px;
+
+}
+div .rating{
+position: absolute;
+  top: 250px;
+   height: 5vh;
+  }
+  #btn-add-card{
+    width:150px;
+    position: absolute;
+    height: 40px;
+    bottom: 30px;
+    left: 500px;
+    }
+    #btn-HOME{
+      width:150px;
+      position:absolute;
+      height: 40px;
+      
+      bottom: 30px;  right: 350px;
+    left: 250px;
+    }
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px ) { 
+
+  div .all-single-page{
+    height: 60vh;
+    position: relative;
+    margin-left: 50px;
+    
+    }
+    .shopping-cart{
+      width: 65%;
+      height: 50vh;
+      /* border: 2px solid rgba(0, 0, 0, 0.247); */
+      border-radius: 10px;
+      margin-left: 150px;
+      overflow: hidden;
+      margin-top: 70px;
+      position: relative;
+      border: 3px solid white;
+      }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px ) { 
+  .shopping-cart{
+    width: 60%;
+    height: 50vh;
+    /* border: 2px solid rgba(0, 0, 0, 0.247); */
+    border-radius: 10px;
+    margin-left: 300px;
+    overflow: hidden;
+    margin-top: 70px;
+    position: relative;
+    border: 3px solid yellow;
+    
+    }
+    div .rating{
+      /* width: fit-content; */
+      position: absolute;
+      top: 210px;
+      }
+     
+          .all-items{
+
+            width: 60%;
+            /* padding: 10px; */
+            margin-left: 310px;
+            margin-top: 30px;
+            
+            position: absolute;
+            }
+            #btn-add-card{
+              width:150px;
+              position: absolute;
+              height: 40px;
+              bottom: 30px;
+              left: 580px;
+              }
+              #btn-HOME{
+                width:150px;
+                position:absolute;
+                height: 40px;
+                
+                bottom: 30px;  right: 350px;
+              left: 308px;
+              }
+           }
+
