@@ -3,12 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link, NavLink,useNavigate } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 import "./Mynavsbar.css";
 import { useEffect, useState } from 'react';
-import Col from "react-bootstrap/Col";
-import { fetchUser } from "../../redux/action";
+
 
 
 export default function Mynavsbar() {
@@ -26,11 +25,9 @@ export default function Mynavsbar() {
     e.preventDefault();
   };
 
-useEffect(()=>{
-
-  settextstate(itemList)
-
-},[])
+useEffect(() => {
+  settextstate(itemList);
+}, []);
 
 const filterBySearch = (event) => {
   setsearchvalue(event.target.value);

@@ -31,7 +31,7 @@ const Singleproduct = () => {
           <img className="my-single-image" src={location.state.item.image} />
         </div>
 
-        <div className="all-items">
+        <div className="all-items-title-description-rate">
           <h2 className="text-light product-title"> {location.state.item.title}</h2>
           <p className="product-description">
             {location.state.item.description}

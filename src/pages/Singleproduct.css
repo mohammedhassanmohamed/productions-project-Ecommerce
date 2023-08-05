@@ -40,7 +40,7 @@ width: fit-content;
 margin-top: 20px;
  
 }
-.all-items{
+.all-items-title-description-rate{
 
 width: 60%;
 /* padding: 10px; */
@@ -158,7 +158,7 @@ height: 60vh;
       border: 3px solid white;
   
     }
-.all-items{
+    .all-items-title-description-rate{
 margin-left: 260px;
 
 }
@@ -226,7 +226,7 @@ position: absolute;
       top: 210px;
       }
      
-          .all-items{
+      .all-items-title-description-rate{
 
             width: 60%;
             /* padding: 10px; */
@@ -252,3 +252,67 @@ position: absolute;
               }
            }
 
+           @media only screen and (max-width: 768px) {
+            .my-single-image{
+              width: 350px;
+              height:20vh;
+              margin-left: 0;
+              margin-top: -28px;
+              
+              
+              }
+            .shopping-cart{
+              width: 70%;
+              height: 80vh;
+              /* border: 2px solid rgba(0, 0, 0, 0.247); */
+              border-radius: 10px;
+              margin-left: -10px;
+              overflow: hidden;
+              margin-top: 70px;
+              position: relative;
+              border: 3px solid yellow;
+              
+              }
+              /* .all-items-title-description-rate {
+
+                width: 80%;
+                height: 20vh;
+                 padding: 10px; 
+           display: block;
+                background-color: #3273e4; 
+              
+                } */
+                .product-description{
+                  position: absolute;
+                  color: rgba(255, 255, 255, 0.589);
+                  width: 350px;
+                  height: 30vh;
+                  left: -340px;
+                  margin-top: 30px;
+                  }
+                  .product-title{
+
+width: 350px;
+margin-left: -340px;
+margin-top: 170px;
+
+
+                  }
+                  #btn-add-card{
+                    width:150px;
+                    position: absolute;
+                    height: 40px;
+                    bottom: 30px;
+                    left: 0px;
+                    }
+                    #btn-HOME{
+              display: none;
+                    }
+                    div .rating{
+                      position: absolute;
+                        top: 200px;
+                        left: -330px;
+                         height: 5vh;
+                        }
+
+           }

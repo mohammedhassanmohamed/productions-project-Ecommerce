@@ -22,8 +22,6 @@ export default function Cart() {
   // };
   let newcartlist = [...cartlist];
   const ButtonHandlerincrease = (index) => {
-   
-   
     newcartlist[index].count =
       newcartlist[index].count !== undefined
         ? (newcartlist[index].count += 1)
@@ -93,10 +91,10 @@ export default function Cart() {
                 </button>
               </div>
               {/* dispatch({ type: "IECREASE", payload: z.price })} */}
-              {/* button about chech out */}
+              {/* button about check out */}
               <button
                 onClick={() => navigate("/goform")}
-                className="btn btn-warning"
+                className="checkout btn btn-warning"
               >
                 Check Out
               </button>
@@ -150,7 +148,7 @@ export default function Cart() {
               </button>
 
               <img src={z.image} width="100px" height="100px" />
-              <div>
+              <div id="title-rating-price">
                 <h2 className="text-light" id="my-title">
                   {z.title}
                 </h2>
