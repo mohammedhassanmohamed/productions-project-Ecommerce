@@ -17,6 +17,7 @@ export default function Mynavsbar() {
   const cartlist = useSelector((state) => state.cart);
   
 
+  const [color,setcolor] = useState(false);
   const [searchvalue,setsearchvalue] = useState("");
 
    const [textstate, settextstate] = useState([]);
@@ -36,17 +37,16 @@ const filterBySearch = (event) => {
   dispatch({type:"FETCH_ITEMS",payload:textstate})
  console.log(textstate);
 }
+  // about scroll
 
-// const filterproduct = () => {
-//   const newfilterationz = [...itemList];
- 
-//  console.log(settextstate(newfilterationz.filter((item) => item.title.includes(searchvalue)))); 
+  const changescroll = ()=>{
+    var scroo = window.scrollY;
+    if (scroo>250) {setcolor(true)}
 
+    else{setcolor(false)}
+      }
 
-
-// }
-
-
+      window.addEventListener("scroll",changescroll);
 //  const filter = (e)=>
  
 // { setsearchvalue(newtextstate.filter((item)=>item.title.tolowercase().includes(e.target.value)))}
@@ -56,12 +56,11 @@ const filterBySearch = (event) => {
     <>
       <Navbar
         sticky="top"
-        className="mb-3 col-md-12 col-lg-12 text-white "
-        bg="dark"
-        variant="dark "
+        className={color? "Navbar navbar-new active":" Navbar"}
+      
         expand="lg"
       >
-        <Container className=" tester bg-dark">
+        <Container className=" tester ">
           <div id="number0-nav">
           <h1  className="text-warning"> {counternav} </h1>
           </div>
@@ -71,7 +70,7 @@ const filterBySearch = (event) => {
               width="40"
               height="40"
               fill="currentColor"
-              className="bi bi-cart-check-fill  text-warning bg-dark"
+              className={color?"svg active":"svg text-warning "}
               viewBox="0 0 16 16"
             >
               <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z" />
@@ -80,19 +79,19 @@ const filterBySearch = (event) => {
           <h1 className="text-danger"> {""}</h1>
 
           <Navbar.Toggle
-            className="text-light bg-dark"
+            className="text-light "
             aria-controls="navbarScroll"
           />
-          <Navbar.Collapse className="text-light bg-dark" id="navbarScroll">
+          <Navbar.Collapse className="text-light " id="navbarScroll">
             <Nav
-              className="me-auto my-2 my-lg-0 text-dark bg-dark"
+              className="me-auto my-2 my-lg-0 text-dark "
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
               <Nav.Link
                 to="/home"
                 as={NavLink}
-                className="navbar-brand text-light bg-dark"
+                className="navbar-brand text-dark "
                 id="home"
               >
                 Home
@@ -100,7 +99,7 @@ const filterBySearch = (event) => {
               <Nav.Link
                 to="/form"
                 as={NavLink}
-                className="text-light bg-dark navbar-brand"
+                className="text-dark navbar-brand"
               >
            
                 form
@@ -108,14 +107,14 @@ const filterBySearch = (event) => {
               <Nav.Link
                 to="#"
                 as={NavLink}
-                className="text-light bg-dark navbar-brand"
+                className="text-dark  navbar-brand"
               >
                 Link
               </Nav.Link>
             </Nav>
             {/* About search input */} {/* About search input */}{" "}
             {/* About search input */}
-            <Form onSubmit={()=>handlesubmit} className="text-light bg-dark d-flex">
+            <Form onSubmit={()=>handlesubmit} className="text-dark  d-flex">
               <input
                 type="text"
                 placeholder="Search"

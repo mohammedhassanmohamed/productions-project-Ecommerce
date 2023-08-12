@@ -28,7 +28,7 @@ const Apifetch = ({ item, id }) => {
   const counternav = useSelector((state) => state.countcart);
 
   const [filteration, setfilteration] = useState([]);
-
+const[click,setclick]=useState(false)
   // const storeditem = itemList.find((o)=>o.id===id);
   // const dis = ()=>cartlist.length>0?"true":"false";
   // console.log("هيهيهيهيهيههيهيهيهيه",dis);
@@ -40,7 +40,7 @@ const Apifetch = ({ item, id }) => {
   dispatch(fetchUser());
   setloading(false);
    
-}, 5000);
+}, 3000);
 
 
 
@@ -53,6 +53,8 @@ const Apifetch = ({ item, id }) => {
     setfilteration(newfilteration.filter((item) => item.category === categ));
   };
 
+
+console.log(window.scrollY);
   const Showbuttons = () => {
     const newwfilteration = [...itemList];
     return (
@@ -149,7 +151,7 @@ const Apifetch = ({ item, id }) => {
                       
                         dispatch({ type: "ADD-TO-CART", payload: item});
                           toast(`you added ${counternav + 1} item to card!`);
-                        setColor(itemList.filter((v)=>v.id!==index)?color===true:color===false);
+                        setColor(itemList.filter((v)=>v.id===index)?color===true:color===false);
                       
                         
                       }}

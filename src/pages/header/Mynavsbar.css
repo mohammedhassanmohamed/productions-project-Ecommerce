@@ -16,18 +16,40 @@ Nav a {
     padding: 10px;
     color: white;
     text-decoration: none;
-   
-}
-
-#number0-nav h1{
-text-align: center;
-margin: auto auto;
 
 }
-#number0-nav  {
+
+#number0-nav h1 {
+    text-align: center;
+    margin: auto auto;
+
+}
+
+#number0-nav {
     height: 50px;
-width: 50px;
+    width: 50px;
     border: 1px solid white;
     background-color: white;
-    border-radius: 50% 50% ;
+    border-radius: 50% 50%;
+}
+
+.Navbar {
+margin-bottom: 3px;
+color: white;
+width: 100%;
+background-color: rgb(240, 255, 255);
+}
+
+
+
+.navbar-new.active {
+    background-color: rgb(252, 252, 63)
+
+
+}
+
+.svg .active{
+
+color:red;
+
 }
