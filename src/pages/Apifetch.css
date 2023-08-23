@@ -12,6 +12,25 @@ body{
   background-color: black;
 
 }
+.light{
+  position: absolute;
+  width: 20px;
+  height: 630%;
+  
+  box-shadow: 20px 20px 20px rgb(170, 7, 7);
+  background-color:rgba(0, 0, 0, 0.342);
+  }
+  .light-two{
+    position: absolute;
+    width: 20px;
+    height: 630%;
+    text-shadow: 20px 20px 20px transparent;
+    box-shadow: 20px 20px 20px 40px rgb(170, 7, 7);
+    background-color:rgba(0, 0, 0, 0.226);
+  right:0 ;
+  
+  }
+
 
 .title-price{
  

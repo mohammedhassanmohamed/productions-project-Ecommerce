@@ -103,11 +103,13 @@ console.log(window.scrollY);
 
   return (
     <div>
+       <div className="light"></div>
+   <div className="light-two"></div>
       <div className="col-lg-4 col-md-3 col-sm-4" id="background-image">
         <img className="image" src={require("../assets/خلفيه-لشاب-وفتاة-576x1024.jpg")} />
         <img className="image" src={require("../assets/خلفيه-لاعب-سوداء-576x1024.jpg")} />
       </div>
-    
+   
         <Showbuttons id="single-bttn" />
       
 
@@ -119,12 +121,15 @@ console.log(window.scrollY);
 
  </div>
       ) : (
+
+   
         <div className="all-card">
           {filteration.map((item, index) => {
             const { id, title, price, description, image, category, count } =
               item;
 
             return (
+              
               <div className="" key={index}>
                 <Card className="bg-dark ">
                   <a onClick={() => navigate("/product", { state: { item } })}>
@@ -171,7 +176,7 @@ console.log(window.scrollY);
 
                   {/* <h1>_____________________________________</h1> */}
                 </Card>
-
+        
                 <ToastContainer
                   position="top-right"
                   autoClose={5000}
@@ -185,6 +190,7 @@ console.log(window.scrollY);
                   theme="light"
                 />
               </div>
+              
             );
           })}
         </div>

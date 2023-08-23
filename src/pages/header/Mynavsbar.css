@@ -14,7 +14,7 @@
 
 Nav a {
     padding: 10px;
-    color: white;
+    color: white !important;
     text-decoration: none;
 
 }
@@ -35,16 +35,16 @@ Nav a {
 
 .Navbar {
 margin-bottom: 3px;
-color: white;
+
 width: 100%;
-background-color: rgb(240, 255, 255);
+background-color: rgb(116, 8, 8);
 }
 
 
 
 .navbar-new.active {
-    background-color: rgb(252, 252, 63)
-
+    background-color: rgb(235, 220, 14);
+color:black
 
 }
 
